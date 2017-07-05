@@ -48,7 +48,7 @@ public class Controller {
     @Setter
     private ConvertMultiPartFileToFile convertMultiPartFileToFile;
 	
-	AWSCredentials credentials = new BasicAWSCredentials("AKIAIBJGDEZ3ZVXIKDMA","oSfxlELENoIJXF/zqf6NMwygZe0Jmlg2a1/r1yCw");
+	AWSCredentials credentials = new BasicAWSCredentials("AccessKey","SecretKey");
 	AmazonS3 s3client = new AmazonS3Client(credentials);
 	
 	public String index() {
